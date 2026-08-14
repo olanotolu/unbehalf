@@ -1,0 +1,53 @@
+.mwg_free_effect002 {
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+}
+
+.mwg_free_effect002 .content-effect {
+    font-size: min(60px, 5.6vw);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    letter-spacing: -0.03em;
+}
+
+.mwg_free_effect002 .content-effect span {
+    display: block;
+    width: max-content;
+}
+
+.mwg_free_effect002 .content-effect span:last-child {
+    color: #999;
+}
+
+.mwg_free_effect002 img {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 4%;
+    z-index: 5;
+}
+
+.mwg_free_effect002 .medias img {
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .mwg_free_effect002 img {
+        width: 35vw;
+        height: 35vw;
+    }
+}

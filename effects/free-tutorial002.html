@@ -1,0 +1,615 @@
+ <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8">  <title>Tutorial 002 — Unbehalf</title> <link rel="stylesheet" href="../assets/landing/style.css"> <link rel="icon" type="image/png" href="../assets/img/fav/favicon-96x96.png" sizes="96x96"> <link rel="icon" type="image/svg+xml" href="../assets/img/fav/favicon.svg"> <link rel="icon" type="image/x-icon" href="../assets/img/fav/favicon.ico"> <link rel="shortcut icon" href="../assets/img/fav/favicon.ico"> <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/fav/apple-touch-icon.png"> <link rel="manifest" href="../assets/img/fav/site.webmanifest.html"> <meta name="viewport" content="width=device-width,initial-scale=1"> <meta name="twitter:creator" content="@madewithgsap"> <meta name="twitter:url" content="https://x.com/madewithgsap"> <meta name="twitter:image" content="https://madewithgsap.com/assets/img/og.jpg"> <meta name="twitter:card" content="summary_large_image"> <meta property="og:site_name" content="Unbehalf"> <meta property="og:locale" content="en_gb"> <meta property="og:type" content="website"> <meta property="og:url" content="https://madewithgsap.com"> <meta property="og:image" content="https://madewithgsap.com/assets/img/og.jpg"> <meta property="og:image:secure_url" content="https://madewithgsap.com/assets/img/og.jpg"> <meta property="og:image:type" content="image/jpeg"> <meta property="og:image:width" content="1200"> <meta property="og:image:height" content="630"> <meta name="theme-color" content="#F1F1F1"> <meta name="msapplication-TileColor" content="#F1F1F1">  <link rel="canonical" href="free-tutorial002.html"> <meta property="og:title" content="Tutorial 002 — Unbehalf"> <meta name="twitter:title" content="Tutorial 002 — Unbehalf">  <meta name="description" content="Discover all the effects in our collection. Showcasing scroll, drag, mouse move, infinite animations, and more."> <meta property="og:description" content="Discover all the effects in our collection. Showcasing scroll, drag, mouse move, infinite animations, and more."> <meta property="og:image:alt" content="Discover all the effects in our collection. Showcasing scroll, drag, mouse move, infinite animations, and more."> <meta name="twitter:description" content="Discover all the effects in our collection. Showcasing scroll, drag, mouse move, infinite animations, and more."> <meta name="twitter:image:alt" content="Discover all the effects in our collection. Showcasing scroll, drag, mouse move, infinite animations, and more.">    <link rel="stylesheet" href="../assets/tutorial/prism.css"> <script defer="defer" src="https://www.googletagmanager.com/gtag/js?id=G-X8E3JZCS2L"></script> <script defer="defer">window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-X8E3JZCS2L');</script> </head> </html><body class="tutorial">
+    <header class="navigation pf g f f-space f-center">  <div> <a class="link-logo pr roll roll2" href="../index.html" aria-label="Go to homepage"> <span> <span class="translate"> <span><img class="logo" src="../assets/img/logo.svg" alt=""></span> <span><img class="logo" src="../assets/img/logo.svg" alt=""></span> </span> </span> </a> </div> <div class="contents"> <div class="right f f-center"> <nav class="not-log label f"> <ul class="f"> <li> <a class="roll" href="../effects.html"> <span> <span class="translate"> <span class="gap-spe">Collection <i class="label-s">112</i></span> <span class="gap-spe">Collection <i class="label-s">112</i></span> </span> </span> </a> </li> <li> <a class="roll" href="../get-started.html"> <span> <span class="translate"> <span>Pricing</span> <span>Pricing</span> </span> </span> </a> </li> <li> <a class="roll" href="../faq.html"> <span> <span class="translate"> <span>FAQ</span> <span>FAQ</span> </span> </span> </a> </li> <li> <a class="roll" href="../showcase.html"> <span> <span class="translate"> <span>Showcase</span> <span>Showcase</span> </span> </span> </a> </li> </ul> </nav> <div class="bottom-mob"> <a href="../get-started.html" class="cta-main cta-main3 roll"> <span> <span class="translate"> <span><span>Join</span><img class="stag st2" src="../assets/img/mwg2/arrow.svg" alt=""></span> <span><span>Join</span><img class="stag st2" src="../assets/img/mwg2/arrow.svg" alt=""></span> </span> </span> </a> <a href="../go-further.html" class="cta-rounded sign-in roll"> <span> <span class="translate"> <span><img src="../assets/img/mwg2/log.svg" alt=""></span> <span><img src="../assets/img/mwg2/log.svg" alt=""></span> </span> </span> </a> </div> </div> </div> <div class="nav-mob f pr"> <a href="../get-started.html" class="cta-main cta-main3"> <span>Join</span> <img src="../assets/img/mwg2/arrow.svg" alt=""> </a> <button class="cta-rounded to-menu-mob pr" aria-label="Open/Close menu"> <img class="img-open pa" src="../assets/img/nav/open-menu.svg" alt=""> <img class="img-close pa" src="../assets/img/nav/close-menu.svg" alt=""> </button> </div> <button class="close-menu-mob pf"></button>  </header> <div class="intro intro-first pf" aria-hidden="true"></div> <div class="message label-s pr"> <p></p> <button class="pa close-message"> <img src="../assets/img/close.svg" alt=""> </button> </div>     <main>
+        <section class="sec-black t-content f spe t-tuto-n-log">
+            <!-- COLONNES DE GAUCHE -->
+            <div class="t-col">
+                <div class="t-sti f t-sti1">
+                    <img src="../assets/img/tutorial/stack.svg" alt="">
+                    <ul>
+                        <li><a href="free-tutorial002.html#">Free Effect 002 - Gravity Mouse Trail</a></li>    
+                        <li><a href="free-tutorial002.html#anchor1">HTML Structure</a></li>
+                        <li><a href="free-tutorial002.html#anchor2">Some CSS</a></li>
+                        <li><a href="free-tutorial002.html#anchor3">Starting the animation</a></li>
+                        <li><a href="free-tutorial002.html#anchor4">Triggering image creation</a></li>
+                        <li><a href="free-tutorial002.html#anchor5">Inside createMedia()</a></li>
+                        <li><a href="free-tutorial002.html#anchor6">Going further</a></li>
+                        <li><a href="free-tutorial002.html#anchor7">Final code</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- COLONNES DU MILIEU -->
+            <div class="pr t-tuto anchor">
+                <div class="t-hero pr body-s f">
+                    <video src="../../pub-8ca9b5847fbb4d4fb97b3497fb9521d5.r2.dev/video_OPTIM/free-002.mp4" muted autoplay loop playsinline></video>
+                    <h1><span>Codrops x MWG</span> <span>Gravity Mouse Trail</span></h1>
+                    <p>This mouse trail has a unique twist. As the user moves the cursor, images are created, fall to the bottom of the screen, bounce, and eventually fade away. Let’s see how it works!</p>
+                </div>
+
+                <h2 class="title-xs anchor" id="anchor1">HTML Structure</h2>
+
+                <p>The structure here is quite simple. We will simply call the set of images we want for our effect:</p>
+                
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-html">&lt;section class="mwg_free_effect002"&gt;
+    &lt;div class="medias"&gt;
+        &lt;img src="./assets/medias/01.png" alt=""&gt;
+        &lt;img src="./assets/medias/02.png" alt=""&gt;
+        &lt;img src="./assets/medias/03.png" alt=""&gt;
+        &lt;img src="./assets/medias/04.png" alt=""&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                </div>
+                
+                <h2 class="title-xs anchor" id="anchor2">Some CSS</h2>
+
+                <p>Now, I will hide these images using a bit of CSS.</p>
+                
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-css">.mwg_free_effect002 .medias img {
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+}</code></pre>
+                </div>
+
+                <p>A quick explanation: we could have loaded these images directly via JavaScript to keep the DOM clean. So why didn’t we do that? Because this technique allows us to load the images immediately, even if they are hidden. This way, there will be no delay when an image is created with our script.</p>
+
+                <p>Here’s how I retrieve all the URLs of the images used in this effect. These URLs are now stored in my <code class="language-javascript">images</code> array.</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">const root = document.querySelector('.mwg_free_effect002')
+const images = [] 
+root.querySelectorAll('.medias img').forEach(image => {
+    images.push(image.getAttribute('src'))
+})</code></pre>
+                </div>
+
+                <h2 class="title-xs anchor" id="anchor3">Starting the animation</h2>
+
+                <p>We’ll trigger a function whenever the cursor moves a certain distance. Here we track both X and Y movements to compute the total distance traveled:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">const root = document.querySelector('.mwg_free_effect002')
+let incr = 0, 
+    oldIncrX = 0,
+    oldIncrY = 0 
+
+root.addEventListener("mousemove", e => {
+    const valX = e.clientX 
+    const valY = e.clientY 
+
+    // Add the positive difference between the last two positions (X + Y) 
+    incr += Math.abs(valX - oldIncrX) + Math.abs(valY - oldIncrY) 
+
+    oldIncrX = valX 
+    oldIncrY = valY
+})</code></pre>
+                </div>
+
+                <p>Here, we calculate the delta between the current cursor position and the previous position on both axes. We then add this total difference to our <code class="language-javascript">incr</code> variable. We also store the deltas because we’ll need them later to determine the direction the image should drift while falling.</p>
+
+                <h2 class="title-xs anchor" id="anchor4">Triggering the Image Creation Function</h2>
+
+                <p>Next, we’ll call the function to create an image once <code class="language-javascript">incr</code> exceeds a specific threshold. To make the effect responsive, we’ll set the threshold to <code class="language-javascript">window.innerWidth / 8</code>.</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">const root = document.querySelector('.mwg_free_effect002') 
+let incr = 0, 
+    oldIncrX = 0, 
+    oldIncrY = 0, 
+    resetDist = window.innerWidth / 8 
+
+root.addEventListener("mousemove", e => { 
+    const valX = e.clientX 
+    const valY = e.clientY 
+
+    incr += Math.abs(valX - oldIncrX) + Math.abs(valY - oldIncrY) 
+
+    if(incr > resetDist) { 
+        incr = 0 
+        createMedia(valX, valY - root.getBoundingClientRect().top, valX - oldIncrX, valY - oldIncrY) 
+    } 
+    
+    oldIncrX = valX 
+    oldIncrY = valY 
+})</code></pre>
+                </div>
+
+                <p>Notice that we pass two extra parameters to <code class="language-javascript">createMedia()</code>: <code class="language-javascript">deltaX</code> and <code class="language-javascript">deltaY</code>. These represent the direction the cursor was moving at the moment the image is created. We’ll use them to make the image drift in the same direction as it falls.</p>
+
+                <p>For the y position, we adjust by subtracting the distance from the top of the root element to the top of the viewport. This ensures the effect works correctly even if the page is scrolled down:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">e.clientY - root.getBoundingClientRect().top</code></pre>
+                </div>
+
+                <h2 class="title-xs anchor" id="anchor5">Inside the createMedia() Function</h2>
+
+                <p>The <code class="language-javascript">createMedia()</code> function now accepts four parameters: <code class="language-javascript">x</code>, <code class="language-javascript">y</code>, <code class="language-javascript">deltaX</code>, and <code class="language-javascript">deltaY</code>. We start by creating an image.</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">const image = document.createElement("img")
+image.setAttribute('src', images[indexImg])
+root.appendChild(image)</code></pre>
+                </div>
+
+                <p>We also add a small guard: if the cursor is too close to the bottom of the viewport, we skip the creation to avoid a visually broken fall:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">const H = window.innerHeight
+if (y > H - 200) return</code></pre>
+                </div>
+
+                <p>Let’s create a simple <code class="language-javascript">GSAP Timeline()</code>. When the timeline finishes, the image is removed from the DOM:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">const tl = gsap.timeline({ 
+    onComplete: () => { 
+        root.removeChild(image); 
+        tl && tl.kill() 
+    } 
+})</code></pre>
+                </div>
+
+                <p>The first tween handles the appearance with the same elastic bounce, but without setting <code class="language-javascript">x</code> and <code class="language-javascript">y</code> — those will be handled by separate tweens running simultaneously:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">tl.fromTo(image, { 
+    xPercent: -50 + (Math.random() - 0.5) * 80, 
+    yPercent: -50 + (Math.random() - 0.5) * 10, 
+    scaleX: 1.3, 
+    scaleY: 1.3, 
+    rotation:(Math.random() - 0.5) * 20 
+}, { 
+    scaleX:1, 
+    scaleY:1, 
+    ease: 'elastic.out(2, 0.6)', 
+    duration: 0.4
+})</code></pre>
+                </div>
+
+                <p>Next, we animate the horizontal position. The image drifts in the direction the cursor was moving, using <code class="language-javascript">deltaX</code>. This tween starts at the same time as the previous one thanks to the <code class="language-javascript">'&lt;'</code> position parameter:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">tl.fromTo(image, { 
+    x, 
+}, { 
+    x: '+=' + deltaX * 2, 
+    rotation: 0, 
+    ease: 'power1.in', 
+    duration: 0.4 
+}, '&lt;')</code></pre>
+                </div>
+
+                <p>Simultaneously, we animate the vertical position. The image falls from its initial y position to the bottom of the viewport. The <code class="language-javascript">yPercent: -95</code> combined with <code class="language-javascript">scale: 0.9</code> ensures the bottom edge of the image lands precisely at the bottom of the viewport:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">tl.fromTo(image, { 
+    y
+}, { 
+    y: '+=' + (H - y), 
+    scale: 0.9, 
+    yPercent: -95, 
+    ease: 'back.in(1.1)', 
+    duration: 0.4 
+}, '&lt;')</code></pre>
+                </div>
+
+                <p>Finally, the bounce. After hitting the bottom, the image bounces back up and disappears. We continue drifting horizontally and add a random rotation for a natural feel:</p>
+
+                <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">tl.to(image, { 
+    x: '+=' + deltaX * 1.6, 
+    rotation:(Math.random() - 0.5) * 40, 
+    ease: 'power1.in', 
+    duration: 0.3 
+}) 
+tl.to(image, { 
+    yPercent: 150, 
+    ease: 'back.in(' + (1.5 + (1 - y/H)) + ')', 
+    duration: 0.3 
+}, '&lt;')</code></pre>
+                </div>
+
+                <p>Notice the dynamic easing: <code class="language-javascript">'back.in(' + (1.5 + (1 - y/H)) + ')'</code>. The higher the image starts, the stronger the overshoot on the bounce, creating a more dramatic effect for images that fall from further up.</p>
+
+                <h2 class="title-xs anchor" id="anchor6">Going further</h2>
+
+                <p>By tweaking the random values or exploring other easing options from GSAP’s documentation, you can achieve different visual effects. Try adjusting the <code class="language-javascript">back.in</code> intensity for more or less dramatic bounces. The <a href="https://gsap.com/docs/v3/Eases/" target="_blank">GSAP Easing documentation</a> page is a great playground for this!</p>
+
+                <p>Effects like this can sometimes behave unpredictably on touch devices, especially on mobile. In such cases, I usually disable the effect and present a simpler layout to the user. If you’d like to see how to implement this, check out our <a href="../go-further.html">Go Further</a> page.</p>
+
+                <!-- FINAL -->
+                <div class="final-anchor anchor" id="anchor7">
+                    <div class="t-final">
+                        <div class="top">
+                            <h2 class="title-xs">Final code</h2>
+                            <div class="btns f label pr">
+                                <button class="on">HTML</button>
+                                <button>CSS</button>
+                                <button>JavaScript</button>
+                            </div>
+                        </div>
+
+                        <div class="code-wrapper on">
+                        <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-html">&lt;section class="mwg_free_effect002"&gt;
+    &lt;p class="content-effect"&gt;
+        &lt;span&gt;Move your mouse to make&lt;/span&gt;
+        &lt;span&gt;images fall and bounce&lt;/span&gt;
+    &lt;/p&gt;
+    &lt;div class="medias"&gt;
+        &lt;img src="assets/medias/01.png" alt=""&gt;
+        &lt;img src="assets/medias/02.png" alt=""&gt;
+        &lt;img src="assets/medias/03.png" alt=""&gt;
+        &lt;img src="assets/medias/04.png" alt=""&gt;
+        &lt;img src="assets/medias/05.png" alt=""&gt;
+        &lt;img src="assets/medias/06.png" alt=""&gt;
+        &lt;img src="assets/medias/07.png" alt=""&gt;
+        &lt;img src="assets/medias/08.png" alt=""&gt;
+        &lt;img src="assets/medias/09.png" alt=""&gt;
+        &lt;img src="assets/medias/10.png" alt=""&gt;
+    &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+                    </div>
+                    <div class="code-wrapper">
+                    <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-css">.mwg_free_effect002 {
+    height: 100dvh;
+    overflow: hidden;
+    position: relative;
+}
+
+.mwg_free_effect002 .content-effect {
+    font-size: min(60px, 5.6vw);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    letter-spacing: -0.03em;
+}
+
+.mwg_free_effect002 .content-effect span {
+    display: block;
+    width: max-content;
+}
+
+.mwg_free_effect002 .content-effect span:last-child {
+    color: #999;
+}
+
+.mwg_free_effect002 img {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 4%;
+    z-index: 5;
+}
+
+.mwg_free_effect002 .medias img {
+    width: 1px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .mwg_free_effect002 img {
+        width: 35vw;
+        height: 35vw;
+    }
+}</code></pre>
+                        </div>
+
+                        <div class="code-wrapper">
+                        <button><img src="../assets/img/tutorial/copy.svg" alt=""></button>
+<pre><code class="language-javascript">const root = document.querySelector('.mwg_free_effect002')
+const images = []
+root.querySelectorAll('.medias img').forEach(image => {
+    images.push(image.getAttribute('src'))
+})
+
+let incr = 0,
+    oldIncrX = 0,
+    oldIncrY = 0,
+    firstMove = true,
+    indexImg = 0
+
+const isCoarsePointer = window.matchMedia('(hover: none)').matches
+const resetDist = window.innerWidth / (isCoarsePointer ? 6 : 8)
+
+const W = window.innerWidth
+const H = window.innerHeight
+const clampX = gsap.utils.clamp(0, W)
+const clampY = gsap.utils.clamp(0, H)
+
+function applyMove(clientX, clientY) {
+    const valX = clampX(clientX)
+    const valY = clampY(clientY)
+
+    if (firstMove) {
+        firstMove = false
+        oldIncrX = valX
+        oldIncrY = valY
+        return
+    }
+
+    incr += Math.abs(valX - oldIncrX) + Math.abs(valY - oldIncrY)
+
+    if (incr > resetDist) {
+        incr = 0
+        createMedia(valX, valY - root.getBoundingClientRect().top, valX - oldIncrX, valY - oldIncrY)
+    }
+
+    oldIncrX = valX
+    oldIncrY = valY
+}
+
+function handleMouseMove(e) {
+    applyMove(e.clientX, e.clientY)
+}
+
+function handleTouchMove(e) {
+    if (!e.touches || !e.touches[0]) return
+    applyMove(e.touches[0].clientX, e.touches[0].clientY)
+}
+
+root.addEventListener('mousemove', handleMouseMove)
+root.addEventListener('touchstart', handleTouchMove, { passive: true })
+root.addEventListener('touchmove', handleTouchMove, { passive: true })
+
+function createMedia(x, y, deltaX, deltaY) {
+    const H = window.innerHeight
+
+    if (y > H - 200) return
+
+    const image = document.createElement("img")
+
+    image.setAttribute('src', images[indexImg])
+    root.appendChild(image)
+
+    const tl = gsap.timeline({
+        onComplete: () => {
+            root.removeChild(image);
+            tl && tl.kill()
+        }
+    })
+
+    tl.fromTo(image, {
+        xPercent: -50 + (Math.random() - 0.5) * 80,
+        yPercent: -50 + (Math.random() - 0.5) * 10,
+        scaleX: 1.3,
+        scaleY: 1.3,
+        rotation:(Math.random() - 0.5) * 20
+    }, {
+        scaleX:1,
+        scaleY:1,
+        ease: 'elastic.out(2, 0.6)',
+        duration: 0.4
+    })
+
+    tl.fromTo(image, {
+        x,
+    }, {
+        x: '+=' + deltaX * 2,
+        rotation: 0,
+        ease: 'power1.in',
+        duration: 0.4
+    }, '&lt;')
+
+    tl.fromTo(image, {
+        y
+    }, {
+        y: '+=' + (H - y),
+        scale: 0.9,
+        yPercent: -95,
+        ease: 'back.in(1.1)',
+        duration: 0.4
+    }, '&lt;')
+
+    tl.to(image, {
+        x: '+=' + deltaX * 1.6,
+        rotation:(Math.random() - 0.5) * 40,
+        ease: 'power1.in',
+        duration: 0.3
+    })
+    tl.to(image, {
+        yPercent: 150,
+        ease: 'back.in(' + (1.5 + (1 - y/H)) + ')',
+        duration: 0.3
+    }, '&lt;')
+
+    indexImg = (indexImg + 1) % images.length
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- COLONNES DE DROITE -->
+            <div class="t-col">
+                <div class="t-sti f t-sti2">
+                    <div class="up">
+                        <div class="t-tabs f f-space">
+                            <button class="t-tab f f-center on">
+                                Methods & Properties
+                            </button>
+                            <button class="t-tab f f-center">
+                                <svg fill="none" height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m6.61719 9.01914v-2.4m0-2.4h.006m5.99401 2.4c0 3.31371-2.6863 5.99996-6.00001 5.99996s-6.000002-2.68625-6.000002-5.99996 2.686292-5.999999 6.000002-5.999999 6.00001 2.686289 6.00001 5.999999z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.23818"/></svg>
+                            </button>
+                        </div>
+                        <div class="tab-content methods on">
+                            <h3>Key JS Methods</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" class="f f-center t-src" target="_blank">
+                                        <span>Array.prototype.forEach()</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" class="f f-center t-src" target="_blank">
+                                        <span>Math.random()</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event" class="f f-center t-src" target="_blank">
+                                        <span>Mousemove event</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect" class="f f-center t-src" target="_blank">
+                                        <span>getBoundingClientRect()</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>Key GSAP Methods</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://gsap.com/docs/v3/GSAP/gsap.fromTo()/" class="f f-center t-src" target="_blank">
+                                        <span>gsap.fromTo()</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://gsap.com/docs/v3/GSAP/Timeline/" class="f f-center t-src" target="_blank">
+                                        <span>gsap.timeline()</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://gsap.com/docs/v3/GSAP/gsap.to()/" class="f f-center t-src" target="_blank">
+                                        <span>gsap.to()</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <h3>Key GSAP Properties</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://gsap.com/docs/v3/Eases/" class="f f-center t-src" target="_blank">
+                                        <span>ease</span>
+                                        <svg fill="none" height="5" viewBox="0 0 5 5" width="5" xmlns="http://www.w3.org/2000/svg"><path d="m.5 4.5 4-4m0 0v4m0-4h-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content credits">
+                            <h3>Photo</h3>
+                            <ul>
+                                <li>Andréa Devillier</li>
+                                <li>Dan</li>
+                                <li>Gabii Fernandez</li>
+                                <li>Jacquelin Perez</li>
+                                <li>Katrin Bolovtsova</li>
+                                <li>Lucas Gouvêa</li>
+                                <li>Rafael Minguet Delgado</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="down f">
+                        <div class="t-trio f">
+                            <!-- WEBFLOW -->
+                            <div class="wf pr">
+                                <div class="wf-tips">
+                                    <div>
+                                        <div class="wf-title f">
+                                            <img class="ico-wf" src="../assets/img/tutorial/webflow.svg" alt="">
+                                            <span>Quick Setup</span>
+                                        </div>
+    
+                                        <p class="wf-p">Make sure GSAP is enabled in the Page Settings panel:</p>
+                                    
+                                        <div class="wf-step f f-space">
+                                            <img class="" src="../assets/img/tutorial/step1.svg" alt="">
+                                            <div class="wf-arrow">→</div>
+                                            <div class="f wf-duo">
+                                                <img class="" src="../assets/img/tutorial/step2.svg" alt="">
+                                                <span>GSAP</span>
+                                            </div>
+                                            <div class="wf-arrow">→</div>
+                                            <div class="f wf-duo">
+                                                <img class="" src="../assets/img/tutorial/step3.svg" alt="">
+                                                <span>On</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button data-json="https://madewithgsap.com/file-access?json=free002" class="f f-space cta-main cta-main7 img-b roll">
+                                    <span>
+                                        <span class="translate">
+                                            <span><span class="label-copied">Copy</span><img class="ico-wf" src="../assets/img/tutorial/webflow-w.svg" alt=""></span>
+                                            <span><span class="label-copied">Copy</span><img class="ico-wf" src="../assets/img/tutorial/webflow-w.svg" alt=""></span>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                            <!-- END WEBFLOW -->
+                            <a href="../sources-free/mwg_free_002.zip" class="f f-space cta-main cta-main6 img-c roll prevent">
+                                <span>
+                                    <span class="translate">
+                                        <span><span>Files</span><img class="ico-view" src="../assets/img/tutorial/download.svg" alt=""></span>
+                                        <span><span>Files</span><img class="ico-view" src="../assets/img/tutorial/download.svg" alt=""></span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a href="free-effect002.html" class="cta-rounded img-c roll">
+                                <span>
+                                    <span class="translate">
+                                        <span><img class="ico-view" src="../assets/img/tutorial/view-b.svg" alt=""></span>
+                                        <span><img class="ico-view" src="../assets/img/tutorial/view-b.svg" alt=""></span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="global-push">
+            <div class="f f-center">
+                <h2 class="title-m">Wanna <span class="text-w">learn</span> <br />something else?</h2>
+                <a href="../effects.html" class="cta-main cta-main6 roll">
+                    <span>
+                        <span class="translate">
+                            <span><span>Back to collection</span><img src="../assets/img/mwg2/arrow.svg" alt=""></span>
+                            <span><span>Back to collection</span><img src="../assets/img/mwg2/arrow.svg" alt=""></span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+         <footer class="wrapper sec-border sec-white pr"> <div class="content pr">  <div class="top"> <p class="label">Join our ever-growing collection of unique, <br>well-crafted JS effects.</p> <h2 class="sr-only">Get ready to animate</h2> <p class="title-xl" aria-hidden="true"> <span class="anim-title anim-title3 f"> <span> <span>G</span> <span>G</span> </span> <span> <span>e</span> <span>e</span> </span> <span> <span>t</span> <span>t</span> </span> &nbsp; <span> <span>r</span> <span>r</span> </span> <span> <span>e</span> <span>e</span> </span> <span> <span>a</span> <span>a</span> </span> <span> <span>d</span> <span>d</span> </span> <span> <span>y</span> <span>y</span> </span> &nbsp; <span> <span>t</span> <span>t</span> </span> <span> <span>o</span> <span>o</span> </span> </span> <span class="anim-title anim-title2 f"> <span> <span>a</span> <span>a</span> </span> <span> <span>n</span> <span>n</span> </span> <span> <span>i</span> <span>i</span> </span> <span> <span>m</span> <span>m</span> </span> <span> <span>a</span> <span>a</span> </span> <span> <span>t</span> <span>t</span> </span> <span> <span>e</span> <span>e</span> </span> </span> </p> <div class="buttons f"> <a href="../get-started.html" class="cta-main cta-main3 roll"> <span> <span class="translate"> <span><span>Become a member</span><img src="../assets/img/mwg2/arrow.svg" alt=""></span> <span><span>Become a member</span><img src="../assets/img/mwg2/arrow.svg" alt=""></span> </span> </span> </a> <a href="../effects.html" class="cta-main cta-main1 roll"> <span> <span class="translate"> <span>Explore collection</span> <span>Explore collection</span> </span> </span> <i></i> </a> </div> </div>  <div class="bottom f f-space"> <div class="left col1"> <div class="inner-form"> <h2 class="title-xs">Never miss what's next</h2> <form class="f form-newsletter body-s f-space" method="" action="free-tutorial002.html"> <input type="email" name="email" placeholder="Your email" required> <button class="cta-sec cta-sec2 roll"> <span> <span class="translate"> <span><span>Submit</span><img src="../assets/img/mwg2/arrow.svg" alt=""></span> <span><span>Submit</span><img src="../assets/img/mwg2/arrow.svg" alt=""></span> </span> </span> </button> </form> <p class="body-xs">By submitting your email, you’ll be the first to know about upcoming updates for Unbehalf. You can unsubscribe at any time.</p> </div> </div> <div class="right col1 f f-space"> <div class="col2"> <h2>Social</h2> <ul class="label"> <li><a href="https://www.instagram.com/madewithgsap" target="_blank" rel="noreferrer"><span>Instagram</span></a></li> <li><a href="https://www.linkedin.com/company/madewithgsap/" target="_blank" rel="noreferrer"><span>Linkedin</span></a></li> <li><a href="https://x.com/madewithgsap" target="_blank" rel="noreferrer"><span>X(Twitter)</span></a></li> <li><a href="https://www.youtube.com/@MadeWithGsap" target="_blank" rel="noreferrer"><span>Youtube</span></a></li> <li><a href="https://bsky.app/profile/madewithgsap.bsky.social" target="_blank" rel="noreferrer"><span>Bluesky</span></a></li> </ul> </div> <div class="col2"> <h2>Pages</h2> <ul class="label"> <li><a href="../effects.html"><span>Collection</span></a></li> <li><a href="../faq.html"><span>FAQ</span></a></li> <li><a href="../get-started.html"><span>Pricing</span></a></li> <li><a href="../showcase.html"><span>Showcase</span></a></li> <li><a href="../effects%3Ffreebies.html"><span>Free effects</span></a></li> </ul> </div> <div class="col2 col2-last"> <h2>Contact</h2> <ul class="label"> <li><a class="prevent" href="mailto:contact@madewithgsap.com"><span>Reach us</span></a></li>  </ul>  <a href="../MWG-App.zip" class="cta-sec cta-sec-app roll prevent"> <span> <span class="translate"> <span><span>Download app</span><img src="../assets/img/mwg2/mac.svg" alt=""></span> <span><span>Download app</span><img src="../assets/img/mwg2/mac.svg" alt=""></span> </span> </span> </a>  </div> </div> </div> <div class="f f-space label footer-end"> <div class="col1">©2026 Unbehalf</div> <div class="col1 f f-space"> <ul class="f links-sec"> <li><a href="../permissions-terms.html"><span>Permissions & Terms</span></a></li> <li><a href="../privacy-policy.html"><span>Privacy policy</span></a></li> </ul> <p class="col2 f manoir"> <a href="https://manoirinc.com" target="_blank"> <img src="../assets/img/mwg2/manoir.svg" alt=""> </a> </p> </div> </div> </div> </footer>     </main>
+ <script src="../assets/landing/gsap.js"></script> <script src="../assets/landing/scrolltrigger.js"></script> <script src="../assets/landing/customease.js"></script> <script src="../assets/landing/lenis.js"></script> <script src="../assets/tutorial/prism.js"></script> <script src="../assets/landing/InertiaPlugin.min.js"></script> <script src="../assets/landing/SplitText.min.js"></script> <script src="../assets/landing/Draggable.min.js"></script> <script src="../assets/landing/MorphSVGPlugin.min.js"></script> <script src="https://unpkg.com/matter-js@0.20.0/build/matter.min.js"></script>  <script src="../assets/landing/app2.js"></script> 

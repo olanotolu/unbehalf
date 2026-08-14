@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ttFont sfntVersion="\x00\x01\x00\x00" ttLibVersion="4.60">
+
+  <name>
+    <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
+      Copyright © 2020 by Massimiliano Vitti, Due Studio. All rights reserved.
+    </namerecord>
+    <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
+      Lay Grotesk - Trial Semibold
+    </namerecord>
+    <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
+      Regular
+    </namerecord>
+    <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
+      1.000;UKWN;LayGrotesk-Trial-Semibold
+    </namerecord>
+    <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
+      Lay Grotesk - Trial Semibold Regular
+    </namerecord>
+    <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
+      1.0
+    </namerecord>
+    <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
+      LayGrotesk-Trial-Semibold
+    </namerecord>
+    <namerecord nameID="7" platformID="3" platEncID="1" langID="0x409">
+      Lay Grotesk is a trademark of Due Studio, Italy
+    </namerecord>
+    <namerecord nameID="8" platformID="3" platEncID="1" langID="0x409">
+      Due Studio
+    </namerecord>
+    <namerecord nameID="9" platformID="3" platEncID="1" langID="0x409">
+      Massimiliano Vitti
+    </namerecord>
+    <namerecord nameID="10" platformID="3" platEncID="1" langID="0x409">
+      Copyright © 2020 by Massimiliano Vitti, Due Studio. All rights reserved.
+    </namerecord>
+    <namerecord nameID="11" platformID="3" platEncID="1" langID="0x409">
+      www.due-studio.com
+    </namerecord>
+    <namerecord nameID="12" platformID="3" platEncID="1" langID="0x409">
+      www.due-studio.com
+    </namerecord>
+    <namerecord nameID="16" platformID="3" platEncID="1" langID="0x409">
+      Lay Grotesk - Trial
+    </namerecord>
+    <namerecord nameID="17" platformID="3" platEncID="1" langID="0x409">
+      Semibold
+    </namerecord>
+    <namerecord nameID="200" platformID="3" platEncID="1" langID="0x409">
+      Webfont 1.0
+    </namerecord>
+    <namerecord nameID="201" platformID="3" platEncID="1" langID="0x409">
+      Mon Oct 14 13:08:48 2024
+    </namerecord>
+    <namerecord nameID="202" platformID="3" platEncID="1" langID="0x409">
+      default
+    </namerecord>
+    <namerecord nameID="203" platformID="3" platEncID="1" langID="0x409">
+      prd-worker-3
+    </namerecord>
+    <namerecord nameID="55555" platformID="3" platEncID="1" langID="0x409">
+      Font Squirrel
+    </namerecord>
+  </name>
+
+</ttFont>
