@@ -9,6 +9,14 @@ build/
 # vercel
 .vercel
 
+# env
+.env*.local
+
+# tool state
+.opencode/
+
 # misc
 *.log
+*.tsbuildinfo
+coverage/
 .DS_Store
